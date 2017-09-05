@@ -1,0 +1,33 @@
+{
+  "name": "mortal-webpack",
+  "description": "webpack configuration for mere mortals.",
+  "main": "lib/index.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "webpack": "^1.15.0",
+    "happypack": "^4.0.0-beta.1",
+    "html-webpack-plugin": "^2.30.1"
+  },
+  "version": "1.0.0",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha 'lib/**/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/amireh/mortal-webpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "configuration"
+  ],
+  "author": "Ahmad Amireh",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/amireh/mortal-webpack/issues"
+  },
+  "homepage": "https://github.com/amireh/mortal-webpack#readme"
+}
