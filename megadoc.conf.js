@@ -149,6 +149,10 @@ module.exports = {
           {
             name: 'webpack.context',
             href: 'https://webpack.github.io/docs/configuration.html#context'
+          },
+          {
+            name: 'Config',
+            href: 'https://webpack.github.io/docs/configuration.html'
           }
         ]
       }]

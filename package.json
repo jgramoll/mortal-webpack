@@ -1,8 +1,10 @@
 {
   "name": "mortal-webpack",
-  "description": "webpack configuration for mere mortals.",
+  "description": "webpack configuration for mere mortals",
   "main": "lib/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "ramda": "^0.24.1"
+  },
   "peerDependencies": {
     "happypack": "^4.0.0-beta.1",
     "html-webpack-plugin": "^2.30.1",
@@ -18,7 +20,6 @@
     "glob": "^7.1.2",
     "happypack": "4.0.0-beta.5",
     "html-webpack-plugin": "2.30.1",
-    "lodash": "^4.17.4",
     "megadoc-cli": "6.0.0-beta.6",
     "megadoc-compiler": "6.0.0-beta.6",
     "megadoc-html-serializer": "6.0.0-beta.6",
