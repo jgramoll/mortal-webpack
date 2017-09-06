@@ -32,7 +32,7 @@
     "webpack": "1.15.0"
   },
   "scripts": {
-    "docs": "rm -rf doc && megadoc",
+    "docs": "rm -rf docs && megadoc",
     "docs:local": "NODE_PATH=../megadoc/packages ../megadoc/packages/megadoc-cli/lib/megadoc.js",
     "lint": "eslint lib",
     "test": "mocha 'lib/**/*.test.js'"

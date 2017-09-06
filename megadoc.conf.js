@@ -76,7 +76,7 @@ const layout = [
 ];
 
 module.exports = {
-  outputDir: path.resolve(__dirname, 'doc'),
+  outputDir: path.resolve(__dirname, 'docs'),
   assetRoot: path.resolve(__dirname),
   strict: true,
   serializer: [ 'megadoc-html-serializer', {
