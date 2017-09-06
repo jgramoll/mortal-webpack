@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="TBD" />
+    <meta name="description" content="mortal-webpack is designed not to throw any exceptions at run-time, and the way it communicates errors is in return values of function calls. When you [[generate | compose]] configuration, the process may fail and then you&#39;re expected to report those failures to the user through some means." />
 
-    <title>DLLs
+    <title>Be nice and report them errors
 </title>
 
     
@@ -16,19 +16,26 @@
   </head>
 
   <body class="body--themed">
-    <div id="__app__"><div data-reactroot="" data-reactid="1" data-react-checksum="-1743535726"><div data-reactid="2"></div><!-- react-empty: 3 --><div class="root root--with-multi-page-layout root--with-two-column-layout root--with-fixed-sidebar root--without-banner" data-reactid="4"><div class="root__screen" data-reactid="5"><div class="two-column-layout two-column-layout--fixed" data-reactid="6"><div class="two-column-layout__left" style="width:340px;" data-reactid="7"><div class="resizable-panel" data-reactid="8"><div class="resizable-panel__content" data-reactid="9"><div data-reactid="10"><div data-reactid="11"><nav data-reactid="12"><div data-reactid="13"><div data-reactid="14"><a href="../changelog.html" class="class-browser__entry-link" data-reactid="15"><!-- react-text: 16 -->CHANGELOG
+    <div id="__app__"><div data-reactroot="" data-reactid="1" data-react-checksum="661460387"><div data-reactid="2"></div><!-- react-empty: 3 --><div class="root root--with-multi-page-layout root--with-two-column-layout root--with-fixed-sidebar root--without-banner" data-reactid="4"><div class="root__screen" data-reactid="5"><div class="two-column-layout two-column-layout--fixed" data-reactid="6"><div class="two-column-layout__left" style="width:340px;" data-reactid="7"><div class="resizable-panel" data-reactid="8"><div class="resizable-panel__content" data-reactid="9"><div data-reactid="10"><div data-reactid="11"><nav data-reactid="12"><div data-reactid="13"><div data-reactid="14"><a href="../changelog.html" class="class-browser__entry-link" data-reactid="15"><!-- react-text: 16 -->CHANGELOG
 <!-- /react-text --></a></div><div data-reactid="17"><a href="../index.html" class="class-browser__entry-link" data-reactid="18"><!-- react-text: 19 -->mortal-webpack
 <!-- /react-text --></a></div></div></nav></div><div data-reactid="20"><h3 class="layout__sidebar-header" data-reactid="21">API</h3></div><div data-reactid="22"><nav class="class-browser__listing" data-reactid="23"><div class="class-browser__category" data-reactid="24"><div class="class-browser__entry" data-reactid="25"><a href="../js/FileTypes.html" class="class-browser__entry-link" data-reactid="26"><!-- react-text: 27 -->FileTypes<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="28"><a href="../js/InvalidConfig.html" class="class-browser__entry-link" data-reactid="29"><!-- react-text: 30 -->InvalidConfig<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="31"><a href="../js/builders.html" class="class-browser__entry-link" data-reactid="32"><!-- react-text: 33 -->builders<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="34"><a href="../js/compose.html" class="class-browser__entry-link" data-reactid="35"><!-- react-text: 36 -->compose<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="37"><a href="../js/reportErrors.html" class="class-browser__entry-link" data-reactid="38"><!-- react-text: 39 -->reportErrors<!-- /react-text --></a></div></div></nav></div><div data-reactid="40"><h3 class="layout__sidebar-header" data-reactid="41">FATALITIES</h3></div><div data-reactid="42"><nav data-reactid="43"><div data-reactid="44"><div data-reactid="45"><a href="common-bundles.html" class="class-browser__entry-link" data-reactid="46"><!-- react-text: 47 -->Common Bundles
-<!-- /react-text --></a></div><div data-reactid="48"><a href="" class="class-browser__entry-link active" data-reactid="49"><!-- react-text: 50 -->DLLs
-<!-- /react-text --></a><div data-reactid="51"></div></div><div data-reactid="52"><a href="error-reporting.html" class="class-browser__entry-link" data-reactid="53"><!-- react-text: 54 -->Be nice and report them errors
-<!-- /react-text --></a></div><div data-reactid="55"><a href="istanbul-instrumenting-loader.html" class="class-browser__entry-link" data-reactid="56"><!-- react-text: 57 -->Coverage with Istanbul
+<!-- /react-text --></a></div><div data-reactid="48"><a href="dlls.html" class="class-browser__entry-link" data-reactid="49"><!-- react-text: 50 -->DLLs
+<!-- /react-text --></a></div><div data-reactid="51"><a href="" class="class-browser__entry-link active" data-reactid="52"><!-- react-text: 53 -->Be nice and report them errors
+<!-- /react-text --></a><div data-reactid="54"></div></div><div data-reactid="55"><a href="istanbul-instrumenting-loader.html" class="class-browser__entry-link" data-reactid="56"><!-- react-text: 57 -->Coverage with Istanbul
 <!-- /react-text --></a></div><div data-reactid="58"><a href="macros.html" class="class-browser__entry-link" data-reactid="59"><!-- react-text: 60 -->Macros
 <!-- /react-text --></a></div><div data-reactid="61"><a href="targets.html" class="class-browser__entry-link" data-reactid="62"><!-- react-text: 63 -->Build targets
 <!-- /react-text --></a></div></div></nav></div><div data-reactid="64"><button title="Search (Ctrl+K or CMD+K)" type="button" class="btn btn-default sidebar-search-button" data-reactid="65">Search</button></div></div></div><div class="ui-resizable-handle ui-resizable-e" data-reactid="66"></div></div></div><div class="two-column-layout__right" style="margin-left:340px;" data-reactid="67"><div data-reactid="68"><div class="doc-content" data-reactid="69"><div data-reactid="70"><div data-reactid="71"><div class="highlighted-text " data-reactid="72">
 <h1 class="anchorable-heading">
-  <a name="dlls" class="anchorable-heading__anchor"></a>
-  <a href="#dlls" class="anchorable-heading__link icon icon-link"></a><span class="anchorable-heading__text">DLLs</span>
-</h1><p><em>TBD</em></p>
+  <a name="be-nice-and-report-them-errors" class="anchorable-heading__anchor"></a>
+  <a href="#be-nice-and-report-them-errors" class="anchorable-heading__link icon icon-link"></a><span class="anchorable-heading__text">Be nice and report them errors</span>
+</h1><p><code>mortal-webpack</code> is designed not to throw any exceptions at run-time, and the
+way it communicates errors is in return values of function calls. When you
+<a href="../js/compose.html" title="The primary routine of mortal-webpack: turn a bunch of [[build directives | builders]] into a webpack configuration object." class="mega-link--internal">generate</a> configuration, the process may fail and then you&#39;re
+expected to report those failures to the user through some means.</p>
+<p>Out of the box, <code>mortal-webpack</code> ships an <a href="../js/reportErrors.html" title="Generate a human-readable error report from an [[invalid config | InvalidConfig]] object." class="mega-link--internal">error reporter</a>
+that formats messages nicely, writes them to STDERR (or anywhere), and
+optionally exit the process with a proper exit code to make it integrate with
+shell tools.</p>
 </div></div></div></div><div class="footer" data-reactid="73"><div class="markdown-text " data-reactid="74">Crafted with &#9829; using <a href="https://github.com/megadoc">megadoc</a>.</div></div></div></div></div></div></div></div></div>
 
     <!-- Prepare UMD container -->
@@ -79,8 +86,8 @@
       ;
 
       exports['megadoc'].startApp(Object.assign({}, exports['megadoc__config'], {
-        startingDocumentUID: "a7f158f3685bb653f30a023e13eaa139",
-        startingDocumentHref: "/fatalities/dlls.html",
+        startingDocumentUID: "2c17b2450fb34a07613f8a8b725822c4",
+        startingDocumentHref: "/fatalities/error-reporting.html",
         plugins: window.MEGADOC_PLUGINS,
       }));
     </script>

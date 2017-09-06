@@ -30,6 +30,17 @@ const layout = [
               on: 'js'
             }
           },
+
+          {
+            name: 'Text',
+            options: {
+              className: 'logo-container',
+            },
+            match: {
+              by: 'url',
+              on: '/index.html',
+            }
+          }
         ]
       },
 
@@ -98,6 +109,11 @@ module.exports = {
       banner: false,
       customLayouts: layout,
     },
+    assets: [
+      {
+        './assets/mortal-webpack-logo--white.svg': 'assets/mortal-webpack-logo.svg',
+      },
+    ]
   }],
 
   sources: [
@@ -142,6 +158,10 @@ module.exports = {
           {
             name: 'Config',
             href: 'https://webpack.github.io/docs/configuration.html'
+          },
+          {
+            name: 'happypack',
+            href: 'https://github.com/amireh/happypack'
           }
         ]
       }]

@@ -38,6 +38,6 @@ has its dependencies rolled up in the common bundle (`vendor.js`) and the
 mini-app's dependencies are bundled inline along with the rest of its code.
 
 In mortal-webpack, this is the default behaviour (through the `strict` option
-accepted by [[Builders.generateCommonBundle]].) It is still possible to 
+accepted by [[builders.generateCommonBundle]].) It is still possible to 
 override it by passing `pluginOptions` to that API and configure the plugin
 directly, but be warned!

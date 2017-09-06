@@ -3439,3 +3439,44 @@ ol {
   margin: 0.25rem 0;
   line-height: 1.2rem;
 }
+@media screen and (max-width: 960px) {
+  img[src*="mortal-webpack-logo.svg"] {
+    width: 192px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1919px) {
+  img[src*="mortal-webpack-logo.svg"] {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 192px;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 1920px) {
+  img[src*="mortal-webpack-logo.svg"] {
+    position: fixed;
+    top: 50%;
+    right: 1.5rem;
+    width: 512px;
+    margin-top: -272px;
+    filter: grayscale(100%);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  img[src*="mortal-webpack-logo.svg"]:hover {
+    filter: none;
+  }
+  .logo-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 512px;
+    background: #e0e0e0;
+    z-index: -2;
+    opacity: 0.5;
+    padding: 1.5rem;
+    box-sizing: content-box;
+  }
+}
