@@ -17,10 +17,10 @@ const layout = [
           },
           {
             name: 'Markdown::Document',
-            using: 'auxiliary',
+            using: 'fatalities',
             match: {
               by: 'namespace',
-              on: 'auxiliary'
+              on: 'fatalities'
             }
           },
           {
@@ -61,17 +61,6 @@ const layout = [
           {
             name: 'Markdown::Browser',
             using: 'fatalities',
-          },
-          {
-            name: 'Layout::SidebarHeader',
-            options: {
-              text: 'AUXILIARY'
-            }
-          },
-
-          {
-            name: 'Markdown::Browser',
-            using: 'auxiliary',
           },
 
           {
@@ -168,28 +157,14 @@ module.exports = {
         baseURL: '/',
         strict: false,
         fullFolderTitles: false,
-        discardIdPrefix: 'doc-',
       }]
     },
 
-    {
-      id: 'auxiliary',
-      include: [
-        'examples/istanbul-instrumenting-loader.md'
-      ],
-
-      processor: [ 'megadoc-plugin-markdown', {
-        baseURL: '/auxiliary',
-        strict: false,
-        fullFolderTitles: false,
-        discardIdPrefix: 'examples-',
-      }]
-    },
 
     {
       id: 'fatalities',
       include: [
-        'examples/writing-multiple-targets.md'
+        'examples/*.md',
       ],
 
       processor: [ 'megadoc-plugin-markdown', {

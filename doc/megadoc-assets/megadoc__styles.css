@@ -3371,6 +3371,9 @@ body.body--themed .doc-entity__description,
 body.body--themed .doc-entity__tags {
   margin-left: 2rem;
 }
+body.body--themed .param-tag .property-tag__default-value {
+  margin-left: 0;
+}
 body.body--themed .js-object-synopsis .property-tag .property-tag {
   margin-left: 2rem;
 }
@@ -3420,4 +3423,19 @@ body.body--themed a.anchorable-heading__link:before {
 }
 .sidebar-search-button {
   margin-top: 1em;
+}
+body.body--themed pre[class*="language-"] {
+  overflow: auto;
+  padding: 0;
+  margin: 2rem;
+  font-family: Inconsolata, Monospace;
+  font-size: 1.1rem;
+}
+ul,
+ol {
+  padding-left: 2.5rem;
+}
+.markdown-toc__entry {
+  margin: 0.25rem 0;
+  line-height: 1.2rem;
 }

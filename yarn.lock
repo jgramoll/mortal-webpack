@@ -2216,16 +2216,16 @@ jschardet@^1.4.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/jschardet/-/jschardet-1.5.1.tgz#c519f629f86b3a5bedba58a88d311309eec097f9"
 
-jsdoc-parser-extended@^6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/jsdoc-parser-extended/-/jsdoc-parser-extended-6.0.0-beta.6.tgz#a7ad81e73b7f4f643eb75a989c5cf9097c6f0f5e"
+jsdoc-parser-extended@^6.0.0-beta.8:
+  version "6.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/jsdoc-parser-extended/-/jsdoc-parser-extended-6.0.0-beta.8.tgz#cbed0aa3d8a68f2fdb6e90f70b9317e1a100f48d"
   dependencies:
     babel-core "6.24.1"
     babel-types "6.24.1"
     catharsis "0.8.8"
     comment-parser "0.4.0"
     lodash "3.10.1"
-    megadoc-docstring "^6.0.0-beta.2"
+    megadoc-docstring "^6.0.0-beta.7"
     weakmap "0.0.6"
 
 jsdoctypeparser@1.2.0:
@@ -2471,22 +2471,22 @@ math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
 
-megadoc-cli@6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/megadoc-cli/-/megadoc-cli-6.0.0-beta.6.tgz#64787eadb48169f76ed9b1790961132fd7d5e8b7"
+megadoc-cli@6.0.0-beta.7:
+  version "6.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/megadoc-cli/-/megadoc-cli-6.0.0-beta.7.tgz#086eadeca1e8ac25ff9eae94bad66964b2988cd5"
   dependencies:
     chokidar "1.6.1"
     cli-table "0.3.1"
     commander "2.9.0"
     fs-extra "2.1.2"
     lodash "3.10.1"
-    megadoc-compiler "^6.0.0-beta.6"
+    megadoc-compiler "^6.0.0-beta.7"
     megadoc-config-utils "^6.0.0-beta.2"
-    megadoc-html-serializer "^6.0.0-beta.6"
+    megadoc-html-serializer "^6.0.0-beta.7"
 
-megadoc-compiler@6.0.0-beta.6, megadoc-compiler@^6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/megadoc-compiler/-/megadoc-compiler-6.0.0-beta.6.tgz#3d851b65dcef4aacb24612b36385e5fba9dd1794"
+megadoc-compiler@6.0.0-beta.7, megadoc-compiler@^6.0.0-beta.7:
+  version "6.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/megadoc-compiler/-/megadoc-compiler-6.0.0-beta.7.tgz#565f140c386ff1ef6d5437e823c88124f2a40a14"
   dependencies:
     ajv "5.0.1"
     async "2.3.0"
@@ -2495,31 +2495,31 @@ megadoc-compiler@6.0.0-beta.6, megadoc-compiler@^6.0.0-beta.6:
     glob "7.1.1"
     invariant "2.2.1"
     megadoc-config-utils "^6.0.0-beta.2"
-    megadoc-corpus "^6.0.0-beta.6"
-    megadoc-linter "^6.0.0-beta.6"
+    megadoc-corpus "^6.0.0-beta.7"
+    megadoc-linter "^6.0.0-beta.7"
     ramda "0.23.0"
 
 megadoc-config-utils@^6.0.0-beta.2:
   version "6.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/megadoc-config-utils/-/megadoc-config-utils-6.0.0-beta.2.tgz#44482be133fb221a3bc8acd3baf8e54c44f1f5a0"
 
-megadoc-corpus@^6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/megadoc-corpus/-/megadoc-corpus-6.0.0-beta.6.tgz#9bca0e4b54c0ebc82e76585f2ec675ded6123ef4"
+megadoc-corpus@^6.0.0-beta.7:
+  version "6.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/megadoc-corpus/-/megadoc-corpus-6.0.0-beta.7.tgz#7bc3bb62fecd18fc15e907a8bd581613ec351072"
   dependencies:
     invariant "2.2.1"
     lodash "3.10.1"
     object-assign "4.0.1"
 
-megadoc-docstring@^6.0.0-beta.2:
-  version "6.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/megadoc-docstring/-/megadoc-docstring-6.0.0-beta.2.tgz#035e4361f9467d1465e5a4fbb90153c3dcc14839"
+megadoc-docstring@^6.0.0-beta.7:
+  version "6.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/megadoc-docstring/-/megadoc-docstring-6.0.0-beta.7.tgz#39df0ea18e0addf8f4ccd7cf51c0c077a99f923c"
   dependencies:
     jsdoctypeparser "1.2.0"
 
-megadoc-html-serializer@6.0.0-beta.6, megadoc-html-serializer@^6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/megadoc-html-serializer/-/megadoc-html-serializer-6.0.0-beta.6.tgz#68a458e6f155a092aa32ef1a535597f91640ebfc"
+megadoc-html-serializer@6.0.0-beta.7, megadoc-html-serializer@^6.0.0-beta.7:
+  version "6.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/megadoc-html-serializer/-/megadoc-html-serializer-6.0.0-beta.7.tgz#05bfecf0fc6da1464f8446edde77b9aa9d377ecd"
   dependencies:
     async "2.3.0"
     babel-core "6.24.1"
@@ -2542,7 +2542,7 @@ megadoc-html-serializer@6.0.0-beta.6, megadoc-html-serializer@^6.0.0-beta.6:
     lodash "3.10.1"
     marked "0.3.3"
     megadoc-config-utils "^6.0.0-beta.2"
-    megadoc-corpus "^6.0.0-beta.6"
+    megadoc-corpus "^6.0.0-beta.7"
     normalize.css "^3.0.3"
     prismjs "1.5.0"
     raw-loader "0.5.1"
@@ -2554,32 +2554,32 @@ megadoc-html-serializer@6.0.0-beta.6, megadoc-html-serializer@^6.0.0-beta.6:
     url-loader "0.5.7"
     webpack "1.12.15"
 
-megadoc-linter@^6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/megadoc-linter/-/megadoc-linter-6.0.0-beta.6.tgz#618157141f58795cd401da5eb66234db4857e4eb"
+megadoc-linter@^6.0.0-beta.7:
+  version "6.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/megadoc-linter/-/megadoc-linter-6.0.0-beta.7.tgz#3ea9371954c3fe1349f05a43fd491830dcd221bb"
 
-megadoc-plugin-js@6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/megadoc-plugin-js/-/megadoc-plugin-js-6.0.0-beta.6.tgz#83e560746d271b51859379623379fe0e83f603d4"
+megadoc-plugin-js@6.0.0-beta.8:
+  version "6.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/megadoc-plugin-js/-/megadoc-plugin-js-6.0.0-beta.8.tgz#215ee43b5c26e04e5fc5f67053596224d5e1004c"
   dependencies:
     babel-core "6.24.1"
     babel-types "6.24.1"
-    jsdoc-parser-extended "^6.0.0-beta.6"
+    jsdoc-parser-extended "^6.0.0-beta.8"
     lodash "3.10.1"
-    megadoc-corpus "^6.0.0-beta.6"
+    megadoc-corpus "^6.0.0-beta.7"
     weakmap "0.0.6"
 
-megadoc-plugin-markdown@6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/megadoc-plugin-markdown/-/megadoc-plugin-markdown-6.0.0-beta.6.tgz#8036ad941f3de689aac44fbb1174e58e2acab02b"
+megadoc-plugin-markdown@6.0.0-beta.7:
+  version "6.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/megadoc-plugin-markdown/-/megadoc-plugin-markdown-6.0.0-beta.7.tgz#2ec6ceaa4b750e8540e6737bf426a79f87f4adbe"
   dependencies:
     lodash "3.10.1"
-    megadoc-corpus "^6.0.0-beta.6"
-    megadoc-html-serializer "^6.0.0-beta.6"
+    megadoc-corpus "^6.0.0-beta.7"
+    megadoc-html-serializer "^6.0.0-beta.7"
 
-megadoc-theme-minimalist@6.0.0-beta.6:
-  version "6.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/megadoc-theme-minimalist/-/megadoc-theme-minimalist-6.0.0-beta.6.tgz#54bd6cd67aa0b552eb85a5d6693841907595ab51"
+megadoc-theme-minimalist@6.0.0-beta.8:
+  version "6.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/megadoc-theme-minimalist/-/megadoc-theme-minimalist-6.0.0-beta.8.tgz#142cc77a63f6e1d2498d8c029d246cada76469e4"
 
 memory-fs@^0.2.0:
   version "0.2.0"

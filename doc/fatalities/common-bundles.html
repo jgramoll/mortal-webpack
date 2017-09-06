@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="What the official webpack documentation has to say on this:" />
+
+    <title>Common Bundles
+</title>
+
+    
+    <link rel="stylesheet" href="../megadoc-assets/megadoc__styles.css" />
+    
+
+    
+  </head>
+
+  <body class="body--themed">
+    <div id="__app__"><div data-reactroot="" data-reactid="1" data-react-checksum="-966755401"><div data-reactid="2"></div><!-- react-empty: 3 --><div class="root root--with-multi-page-layout root--with-two-column-layout root--with-fixed-sidebar root--without-banner" data-reactid="4"><div class="root__screen" data-reactid="5"><div class="two-column-layout two-column-layout--fixed" data-reactid="6"><div class="two-column-layout__left" style="width:340px;" data-reactid="7"><div class="resizable-panel" data-reactid="8"><div class="resizable-panel__content" data-reactid="9"><div data-reactid="10"><div data-reactid="11"><nav data-reactid="12"><div data-reactid="13"><div data-reactid="14"><a href="../index.html" class="class-browser__entry-link" data-reactid="15"><!-- react-text: 16 -->mortal-webpack
+<!-- /react-text --></a></div><div data-reactid="17"><a href="../changelog.html" class="class-browser__entry-link" data-reactid="18"><!-- react-text: 19 -->CHANGELOG
+<!-- /react-text --></a></div></div></nav></div><div data-reactid="20"><h3 class="layout__sidebar-header" data-reactid="21">API</h3></div><div data-reactid="22"><nav class="class-browser__listing" data-reactid="23"><div class="class-browser__category" data-reactid="24"><div class="class-browser__entry" data-reactid="25"><a href="../js/Builders.html" class="class-browser__entry-link" data-reactid="26"><!-- react-text: 27 -->Builders<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="28"><a href="../js/FileTypes.html" class="class-browser__entry-link" data-reactid="29"><!-- react-text: 30 -->FileTypes<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="31"><a href="../js/InvalidConfig.html" class="class-browser__entry-link" data-reactid="32"><!-- react-text: 33 -->InvalidConfig<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="34"><a href="../js/compose.html" class="class-browser__entry-link" data-reactid="35"><!-- react-text: 36 -->compose<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="37"><a href="../js/exitOnConfigError.html" class="class-browser__entry-link" data-reactid="38"><!-- react-text: 39 -->exitOnConfigError<!-- /react-text --></a></div><div class="class-browser__entry" data-reactid="40"><a href="../js/strip.html" class="class-browser__entry-link" data-reactid="41"><!-- react-text: 42 -->strip<!-- /react-text --></a></div></div></nav></div><div data-reactid="43"><h3 class="layout__sidebar-header" data-reactid="44">FATALITIES</h3></div><div data-reactid="45"><nav data-reactid="46"><div data-reactid="47"><div data-reactid="48"><a href="" class="class-browser__entry-link active" data-reactid="49"><!-- react-text: 50 -->Common Bundles
+<!-- /react-text --></a><div data-reactid="51"><ul class="markdown-toc" data-reactid="52"><li class="markdown-toc__entry" data-reactid="53"><a href="#quirk-the-minchunks-option-and-the-meaning-of-infinity" class="" data-reactid="54">Quirk: the minChunks option and the meaning of infinity</a></li></ul></div></div><div data-reactid="55"><a href="dlls.html" class="class-browser__entry-link" data-reactid="56"><!-- react-text: 57 -->DLLs
+<!-- /react-text --></a></div><div data-reactid="58"><a href="istanbul-instrumenting-loader.html" class="class-browser__entry-link" data-reactid="59"><!-- react-text: 60 -->Istanbul Instrumenting Loader
+<!-- /react-text --></a></div><div data-reactid="61"><a href="macros.html" class="class-browser__entry-link" data-reactid="62"><!-- react-text: 63 -->Macros
+<!-- /react-text --></a></div><div data-reactid="64"><a href="targets.html" class="class-browser__entry-link" data-reactid="65"><!-- react-text: 66 -->Build Targets &amp; Profiles
+<!-- /react-text --></a></div></div></nav></div><div data-reactid="67"><button title="Search (Ctrl+K or CMD+K)" type="button" class="btn btn-default sidebar-search-button" data-reactid="68">Search</button></div></div></div><div class="ui-resizable-handle ui-resizable-e" data-reactid="69"></div></div></div><div class="two-column-layout__right" style="margin-left:340px;" data-reactid="70"><div data-reactid="71"><div class="doc-content" data-reactid="72"><div data-reactid="73"><div data-reactid="74"><div class="highlighted-text " data-reactid="75">
+<h1 class="anchorable-heading">
+  <a name="common-bundles" class="anchorable-heading__anchor"></a>
+  <a href="#common-bundles" class="anchorable-heading__link icon icon-link"></a><span class="anchorable-heading__text">Common Bundles</span>
+</h1>
+<h3 class="anchorable-heading">
+  <a name="quirk-the-minchunks-option-and-the-meaning-of-infinity" class="anchorable-heading__anchor"></a>
+  <a href="#quirk-the-minchunks-option-and-the-meaning-of-infinity" class="anchorable-heading__link icon icon-link"></a><span class="anchorable-heading__text">Quirk: the <code>minChunks</code> option and the meaning of infinity</span>
+</h3><p>What the official webpack documentation has to say on this:</p>
+<blockquote>
+<p>The minimum number of chunks which need to contain a module before it’s moved
+into the commons chunk. The number must be greater than or equal 2 and lower
+than or equal to the number of chunks. Passing Infinity just creates the
+commons chunk, but moves no modules into it. By providing a function you can
+add custom logic. (Defaults to the number of chunks)</p>
+</blockquote>
+<p>The possible values this option can have are:</p>
+<ul>
+<li><code>number</code></li>
+<li><code>Infinity</code></li>
+<li><code>function(module, count) -&gt; boolean</code></li>
+</ul>
+<p>Not setting the value to <code>Infinity</code> implies that if a module seems to be
+referenced by more than one bundle, it will also be added to that bundle
+(even <em>if</em> it was not listed in the module list for the entry the plugin was
+defined for.)</p>
+<p>How this affected us was in the following situation: at some point, a mini-app
+appeared in our code-base that had a dependency on a module (say, <code>lodash</code>) of
+a different version than the one in the base app. The base app&#39;s dependency was
+being served in the common bundle, and we found out as time went by that the
+dependency of the mini-app was also being served in the bundle.</p>
+<p>However, that mini-app was never meant to use the common bundle; its own
+dependencies were meant to be bundled along with its application code. At run-
+time, you&#39;d find out that the mini-app couldn&#39;t run because some of its
+dependencies were no longer found by webpack - that is, they are residing in
+the common bundle (<code>vendor.js</code>) which was never sourced by the HTML.</p>
+<p>This is where the <code>minChunks: Infinity</code> option came into play: it instructs
+webpack to not add any module into the common bundle except for those listed in
+the entry the plugin is defined for. That&#39;s what we were after; the base app
+has its dependencies rolled up in the common bundle (<code>vendor.js</code>) and the
+mini-app&#39;s dependencies are bundled inline along with the rest of its code.</p>
+<p>In mortal-webpack, this is the default behaviour (through the <code>strict</code> option
+accepted by <a href="../js/Builders.html#.generateCommonBundle" title="Generate a bundle like in [[.generateBundle]] except that this one is meant to be the &quot;common&quot; bundle that includes modules referenced by one or more other bundles." class="mega-link--internal">Builders.generateCommonBundle</a>.) It is still possible to 
+override it by passing <code>pluginOptions</code> to that API and configure the plugin
+directly, but be warned!</p>
+</div></div></div></div><div class="footer" data-reactid="76"><div class="markdown-text " data-reactid="77">Crafted with &#9829; using <a href="https://github.com/megadoc">megadoc</a>.</div></div></div></div></div></div></div></div></div>
+
+    <!-- Prepare UMD container -->
+    <script>
+      window.exports = {};
+    </script>
+
+    <!-- Megadoc core scripts -->
+    
+    <script type="text/javascript" src="../megadoc-assets/megadoc__config.js"></script>
+    
+    <script type="text/javascript" src="../megadoc-assets/megadoc__vendor.js"></script>
+    
+    <script type="text/javascript" src="../megadoc-assets/megadoc.js"></script>
+    
+
+    <!-- Re-export common modules into MEGADOC_PUBLIC_MODULES -->
+    <script type="text/javascript" src="../megadoc-assets/megadoc__common.js"></script>
+    <script>
+      window.MEGADOC_PUBLIC_MODULES = exports['megadoc__common'];
+    </script>
+
+    <!-- Collect plugin script exports -->
+    
+    <script type="text/javascript" src="../megadoc-assets/megadoc-plugin-js.js"></script>
+    
+    <script type="text/javascript" src="../megadoc-assets/megadoc-plugin-markdown.js"></script>
+    
+    <script type="text/javascript" src="../megadoc-assets/megadoc-theme-minimalist.js"></script>
+    
+
+    <!-- Load the plugins and start the client -->
+    <script>
+      window.MEGADOC_PLUGINS = Object.keys(exports)
+        .filter(function(key) {
+          var thing = exports[key];
+
+          return (
+            thing &&
+            typeof thing === 'object' &&
+            typeof thing.name === 'string' &&
+            /megadoc-(theme|plugin)-/.test(thing.name)
+          );
+        })
+        .map(function(key) {
+          return exports[key];
+        })
+      ;
+
+      exports['megadoc'].startApp(Object.assign({}, exports['megadoc__config'], {
+        startingDocumentUID: "283d03565f61d8c4fd32cb90901cda37",
+        startingDocumentHref: "/fatalities/common-bundles.html",
+        plugins: window.MEGADOC_PLUGINS,
+      }));
+    </script>
+  </body>
+</html>

@@ -1,3 +1,24 @@
+@import (reference) "~helpers";
+
 .sidebar-search-button {
   margin-top: 1em;
+}
+
+.schemable({
+  pre[class*="language-"] {
+    overflow: auto;
+    padding: 0;
+    margin: 2rem;
+    font-family: Inconsolata, Monospace;
+    font-size: 1.1rem;
+  }
+});
+
+ul, ol {
+  padding-left: 2.5rem;
+}
+
+.markdown-toc__entry {
+  margin: 0.25rem 0;
+  line-height: 1.2rem;
 }
