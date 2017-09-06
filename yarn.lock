@@ -1045,6 +1045,13 @@ colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
+columnify@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/columnify/-/columnify-1.5.4.tgz#4737ddf1c7b69a8a7c340570782e947eec8e78bb"
+  dependencies:
+    strip-ansi "^3.0.0"
+    wcwidth "^1.0.0"
+
 combined-stream@^1.0.5, combined-stream@~1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/combined-stream/-/combined-stream-1.0.5.tgz#938370a57b4a51dea2c77c15d5c5fdf895164009"
@@ -1277,6 +1284,12 @@ deep-extend@~0.4.0:
 deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
+
+defaults@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/defaults/-/defaults-1.0.3.tgz#c656051e9817d9ff08ed881477f3fe4019f3ef7d"
+  dependencies:
+    clone "^1.0.2"
 
 defined@^1.0.0:
   version "1.0.0"
@@ -2471,22 +2484,22 @@ math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
 
-megadoc-cli@6.0.0-beta.7:
-  version "6.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/megadoc-cli/-/megadoc-cli-6.0.0-beta.7.tgz#086eadeca1e8ac25ff9eae94bad66964b2988cd5"
+megadoc-cli@6.0.0-beta.9:
+  version "6.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/megadoc-cli/-/megadoc-cli-6.0.0-beta.9.tgz#ac74c0b6f36e236ca3b89c7ed7e7b41dcc5308e8"
   dependencies:
     chokidar "1.6.1"
     cli-table "0.3.1"
     commander "2.9.0"
     fs-extra "2.1.2"
     lodash "3.10.1"
-    megadoc-compiler "^6.0.0-beta.7"
+    megadoc-compiler "^6.0.0-beta.9"
     megadoc-config-utils "^6.0.0-beta.2"
-    megadoc-html-serializer "^6.0.0-beta.7"
+    megadoc-html-serializer "^6.0.0-beta.9"
 
-megadoc-compiler@6.0.0-beta.7, megadoc-compiler@^6.0.0-beta.7:
-  version "6.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/megadoc-compiler/-/megadoc-compiler-6.0.0-beta.7.tgz#565f140c386ff1ef6d5437e823c88124f2a40a14"
+megadoc-compiler@6.0.0-beta.9, megadoc-compiler@^6.0.0-beta.9:
+  version "6.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/megadoc-compiler/-/megadoc-compiler-6.0.0-beta.9.tgz#b81911f31dd2d647a5a3d061833b75af8d0d58df"
   dependencies:
     ajv "5.0.1"
     async "2.3.0"
@@ -2517,9 +2530,9 @@ megadoc-docstring@^6.0.0-beta.7:
   dependencies:
     jsdoctypeparser "1.2.0"
 
-megadoc-html-serializer@6.0.0-beta.7, megadoc-html-serializer@^6.0.0-beta.7:
-  version "6.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/megadoc-html-serializer/-/megadoc-html-serializer-6.0.0-beta.7.tgz#05bfecf0fc6da1464f8446edde77b9aa9d377ecd"
+megadoc-html-serializer@6.0.0-beta.9, megadoc-html-serializer@^6.0.0-beta.9:
+  version "6.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/megadoc-html-serializer/-/megadoc-html-serializer-6.0.0-beta.9.tgz#62b3df70baa6afdb3dac4273074944cfcfb0a75e"
   dependencies:
     async "2.3.0"
     babel-core "6.24.1"
@@ -2569,13 +2582,13 @@ megadoc-plugin-js@6.0.0-beta.8:
     megadoc-corpus "^6.0.0-beta.7"
     weakmap "0.0.6"
 
-megadoc-plugin-markdown@6.0.0-beta.7:
-  version "6.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/megadoc-plugin-markdown/-/megadoc-plugin-markdown-6.0.0-beta.7.tgz#2ec6ceaa4b750e8540e6737bf426a79f87f4adbe"
+megadoc-plugin-markdown@6.0.0-beta.9:
+  version "6.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/megadoc-plugin-markdown/-/megadoc-plugin-markdown-6.0.0-beta.9.tgz#51018b1f690fff53cff903fe6f22d8adb86a35a8"
   dependencies:
     lodash "3.10.1"
     megadoc-corpus "^6.0.0-beta.7"
-    megadoc-html-serializer "^6.0.0-beta.7"
+    megadoc-html-serializer "^6.0.0-beta.9"
 
 megadoc-theme-minimalist@6.0.0-beta.8:
   version "6.0.0-beta.8"
@@ -3696,6 +3709,10 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
+stack-trace@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.10.tgz#547c70b347e8d32b4e108ea1a2a159e5fdde19c0"
+
 stream-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-1.0.0.tgz#bf9b4abfb42b274d751479e44e0ff2656b6f1193"
@@ -4062,6 +4079,12 @@ watchpack@^0.2.1:
     async "^0.9.0"
     chokidar "^1.0.0"
     graceful-fs "^4.1.2"
+
+wcwidth@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/wcwidth/-/wcwidth-1.0.1.tgz#f0b0dcf915bc5ff1528afadb2c0e17b532da2fe8"
+  dependencies:
+    defaults "^1.0.3"
 
 weakmap@0.0.6:
   version "0.0.6"

@@ -3,7 +3,9 @@
   "description": "webpack configuration for mere mortals",
   "main": "lib/index.js",
   "dependencies": {
-    "ramda": "^0.24.1"
+    "columnify": "^1.5.4",
+    "ramda": "^0.24.1",
+    "stack-trace": "^0.0.10"
   },
   "peerDependencies": {
     "happypack": "^4.0.0-beta.1",
@@ -20,17 +22,17 @@
     "glob": "^7.1.2",
     "happypack": "4.0.0-beta.5",
     "html-webpack-plugin": "2.30.1",
-    "megadoc-cli": "6.0.0-beta.7",
-    "megadoc-compiler": "6.0.0-beta.7",
-    "megadoc-html-serializer": "6.0.0-beta.7",
+    "megadoc-cli": "6.0.0-beta.9",
+    "megadoc-compiler": "6.0.0-beta.9",
+    "megadoc-html-serializer": "6.0.0-beta.9",
     "megadoc-plugin-js": "6.0.0-beta.8",
-    "megadoc-plugin-markdown": "6.0.0-beta.7",
+    "megadoc-plugin-markdown": "6.0.0-beta.9",
     "megadoc-theme-minimalist": "6.0.0-beta.8",
     "mocha": "^3.5.0",
     "webpack": "1.15.0"
   },
   "scripts": {
-    "docs": "megadoc",
+    "docs": "rm -rf doc && megadoc",
     "docs:local": "NODE_PATH=../megadoc/packages ../megadoc/packages/megadoc-cli/lib/megadoc.js",
     "lint": "eslint lib",
     "test": "mocha 'lib/**/*.test.js'"

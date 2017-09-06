@@ -4,6 +4,12 @@ Declarative webpack configuration.
 
 ## Installation
 
+```shell
+npm install --save-dev mortal-webpack
+# or using yarn
+yarn add --dev mortal-webpack
+```
+
 ## Usage
 
 ### Targets
