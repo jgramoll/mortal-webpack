@@ -38,7 +38,7 @@ They would now put `mortal-webpack` in between:
 // @file: webpack.config.js
 const { compose, builders: b } = require('mortal-webpack')
 
-module.exports = compose([
+module.exports = compose({}, [
   b.generateBundle({
     name: 'application',
     modules: [ 'index.js' ]

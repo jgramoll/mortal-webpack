@@ -1,3 +1,8 @@
+## 1.1.1
+
+- Added builder [[builders.plugin]]
+- Is now somewhat compatible with ExtractTextWebpackPlugin (ugh)
+
 ## 1.1.0
 
 - Added builder [[builders.message]]
