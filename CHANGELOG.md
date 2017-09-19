@@ -1,3 +1,8 @@
+## 1.1.2
+
+- [[builders.enableDevServer]] now accepts all devServer configuration
+  parameters
+
 ## 1.1.1
 
 - Added builder [[builders.plugin]]

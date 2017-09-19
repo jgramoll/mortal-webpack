@@ -1,7 +1,7 @@
 {
   "name": "mortal-webpack",
   "description": "webpack configuration for mere mortals",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "lib/index.js",
   "dependencies": {
     "columnify": "^1.5.4",
