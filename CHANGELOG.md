@@ -10,6 +10,10 @@
 ## 1.1.1
 
 - Added builder [[builders.plugin]]
+- [[compose]] will no longer break if `html-webpack-plugin` is not installed
+  and no html file is being generated
+- [[compose]] will no longer break if `happypack` is not installed and
+  happypack was not requested to be used
 - Is now somewhat compatible with ExtractTextWebpackPlugin (ugh)
 
 ## 1.1.0

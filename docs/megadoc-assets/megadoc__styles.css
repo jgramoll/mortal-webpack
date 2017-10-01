@@ -1770,6 +1770,9 @@ a[target="_blank"]:after {
 body.body--themed a.mega-link--broken {
   color: #dc322f;
 }
+body.body--themed a.mega-link--active {
+  color: #2aa198;
+}
 h1,
 h2,
 h3 {
@@ -2120,9 +2123,6 @@ body.body--themed .footer {
 }
 .root--with-fixed-sidebar .two-column-layout__left--collapsed .resizable-panel__content {
   visibility: hidden;
-}
-.root--with-banner .two-column-layout__left {
-  top: 3.25em;
 }
 body.body--themed .two-column-layout__left {
   background: #ffffff;
