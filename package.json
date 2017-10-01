@@ -4,12 +4,12 @@
   "version": "1.1.2",
   "main": "lib/index.js",
   "dependencies": {
-    "columnify": "^1.5.4",
-    "ramda": "^0.24.1",
-    "stack-trace": "^0.0.10"
+    "columnify": "1.5.4",
+    "ramda": "0.24.1",
+    "stack-trace": "0.0.10"
   },
   "peerDependencies": {
-    "happypack": "^4.0.0-beta.1",
+    "happypack": "^4.0.0",
     "html-webpack-plugin": "^2.30.1",
     "webpack": "^1.15.0"
   },
@@ -17,9 +17,9 @@
     "lib": "lib"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "4.1.2",
     "eslint": "4.6.1",
-    "glob": "^7.1.2",
+    "glob": "7.1.2",
     "happypack": "4.0.0-beta.5",
     "html-webpack-plugin": "2.30.1",
     "megadoc-cli": "6.0.0-beta.9",
@@ -28,9 +28,9 @@
     "megadoc-plugin-js": "6.0.0-beta.8",
     "megadoc-plugin-markdown": "6.0.0-beta.9",
     "megadoc-theme-minimalist": "6.0.0-beta.8",
-    "mocha": "^3.5.0",
-    "nyc": "^11.2.1",
-    "sinon": "^3.2.1",
+    "mocha": "3.5.0",
+    "nyc": "11.2.1",
+    "sinon": "3.2.1",
     "webpack": "1.15.0"
   },
   "scripts": {
